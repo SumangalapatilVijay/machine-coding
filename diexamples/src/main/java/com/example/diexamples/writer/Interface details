@@ -1,0 +1,30 @@
+Till Java 7 -
+Interfaces - allowed only
+                - public static final (Constant) variables
+                - public abstract methods
+                - U cannot instantiate the interfaces directly
+In Java 8 - onwards
+          - allowed
+            - public static final (Constant) variables
+            - public abstract methods
+            - default methods - with definition
+            - Static methods - with definition
+In Java 9 - onwards
+          - allowed
+            - public static final (Constant) variables
+            - public abstract methods
+            - default methods - with definition
+            - Static methods - with definition
+            - private methods
+            - private static methods
+<h1>Advantages of these private methods:</h1>
+    <h2> Code re-usability:</h2>
+        If two default methods need to share code,
+        a private interface method allows them to do so without exposing
+        that method to implementing classes.
+    <h2> Confidential code: </h2>
+        Private methods are visible only within the interface itself,
+        making them suitable for confidential or internal logic.
+
+    <h2> These private methods are accessible only within the interface itself and cannot be inherited by other interfaces or classes.</h2>
+
