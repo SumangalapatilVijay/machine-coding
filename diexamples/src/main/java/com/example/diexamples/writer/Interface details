@@ -17,14 +17,25 @@ In Java 9 - onwards
             - Static methods - with definition
             - private methods
             - private static methods
-<h1>Advantages of these private methods:</h1>
-    <h2> Code re-usability:</h2>
-        If two default methods need to share code,
-        a private interface method allows them to do so without exposing
-        that method to implementing classes.
-    <h2> Confidential code: </h2>
-        Private methods are visible only within the interface itself,
-        making them suitable for confidential or internal logic.
+Advantages of these private methods:
+        - Code re-usability:
+            If two default methods need to share code,
+            a private interface method allows them to do so without exposing
+            that method to implementing classes.
+        - Confidential code:
+            Private methods are visible only within the interface itself,
+            making them suitable for confidential or internal logic.
 
-    <h2> These private methods are accessible only within the interface itself and cannot be inherited by other interfaces or classes.</h2>
+            These private methods are accessible only within the interface itself and cannot
+            be inherited by other interfaces or classes.
+Uses of Interfaces:
+    - To achieve
+        -1 Multiple Inheritance
+            While classes allows only single inheritance, however interfaces allows u to implement
+            multiple interfaces to single class.
+        -2 To add some behavioural functionality ex- Comparable, Comparator and Clonable
+        -3 To achieve Polymorphism
+        -4 Default Methods in Interfaces- to achieve backward compatibility,
+            sometime,, In a Well established application, u will get requirement which needs writing single function in an interface would solve the purpose, so Java 8 onwards introduced the default methods which will not break flow by addind default methd,
+            where as adding abstract method will affect all the flow who implement that interface.
 
